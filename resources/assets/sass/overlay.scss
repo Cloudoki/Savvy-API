@@ -1,0 +1,36 @@
+// Overlay has several z-index levels according to what it needs to block/hide
+// 90: header + leftnav visible
+// 101: header visible
+// 100000: nothing visible
+// 
+/* Variables */
+$main-color: #465a65;
+$light-color: #90a4af;
+$dark-color: #273238;
+$light-grey: #ddd;
+$white: #fff;
+$grey: #bcbbc6;
+$green: #afc536;
+$dark-green: #99ac30;
+$mail-body: #f1f1f1;
+section.cp-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	background-color: #000;
+	opacity: 0;
+	transition: opacity .25s, height 0s .25s, width 0s .25s, z-index 0s .25s;
+
+	&.all, &.header, &.navs {
+		opacity: .5;
+		width: 100%;
+		height: 100%;
+		transition: opacity .25s;
+	}
+
+	&.all { z-index: 10000; }
+	&.header { z-index: 101; }
+	&.navs { z-index: 90; }
+}

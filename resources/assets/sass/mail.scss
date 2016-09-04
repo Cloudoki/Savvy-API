@@ -1,0 +1,78 @@
+/* Variables */
+$main-color: #465a65;
+$light-color: #90a4af;
+$dark-color: #273238;
+$light-grey: #ddd;
+$white: #fff;
+$grey: #bcbbc6;
+$green: #afc536;
+$dark-green: #99ac30;
+$mail-body: #f1f1f1;
+#email-table-container{
+	background-color: #f1f1f1;
+	width:100%;
+	height:100%;
+	margin-top:20px;
+	margin-bottom:25px;
+}
+
+#email-container{
+	width:600px;
+}
+
+#email-header{
+	h2{
+		color:#404040;
+		font-family:Helvetica;
+		font-size:28px;
+		font-weight:bold;
+		letter-spacing:0.1em;
+		margin-top:0;
+		margin-bottom:10px;
+		text-align:center;
+	};
+	img{
+		width:30%;
+		display:block;
+		margin: 0 auto;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+}
+
+.section-title{
+	h3{
+		color:#404040;
+		font-family:Helvetica;
+		font-size:18px;
+		font-weight:bold;
+		letter-spacing:0.1em;
+		margin-top:0;
+		margin-bottom:10px;
+		text-align:center;
+	}
+}
+
+.body-content{
+	color:#505050;
+	font-family:Helvetica;
+	font-size:14px;
+	line-height:150%;
+	padding:30px;
+	text-align:justify;
+}
+
+.left-column-content, .right-column-content {
+	color:#505050;
+	font-family:Helvetica;
+	font-size:14px;
+	line-height:150%;
+	padding:30px;
+	text-align:justify;
+}
+
+.left-column-content{
+	border-right:1px solid #CCCCCC;
+}
+
+

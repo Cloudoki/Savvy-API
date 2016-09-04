@@ -1,0 +1,58 @@
+/* Variables */
+$main-color: #465a65;
+$light-color: #90a4af;
+$dark-color: #273238;
+$light-grey: #ddd;
+$white: #fff;
+$grey: #bcbbc6;
+$green: #afc536;
+$dark-green: #99ac30;
+$mail-body: #f1f1f1;
+.leftnav {
+	height: 100%;
+	background-color: #36474f;
+	position: absolute;
+	left: 0;
+	width: 90px;
+	z-index: 100;
+
+	.leftnav-item {
+		> a {
+			display: block;
+			padding: 10px;
+			color: $light-color;
+			text-transform: uppercase;
+			text-align: center;
+			text-decoration: none;
+
+			> i {
+				font-size: 2em;
+			}	
+		}
+
+		.item-name {
+			font-size: .7em;
+			font-weight: 500;
+		}
+
+		&:hover {
+			> a {
+				background-color: $dark-color;
+				color: $light-grey;
+				cursor: pointer;
+			}
+		}
+	}
+
+	&.dashboard .leftnav-item.dashboard a,
+	&.persons .leftnav-item.persons a,
+	&.identities .leftnav-item.identities a,
+	&.reminders .leftnav-item.reminders a,
+	&.documents .leftnav-item.documents a,
+	&.notes .leftnav-item.notes a,
+	&.admin .leftnav-item.admin a {
+		background-color: $dark-color;
+		color: #fff;
+		cursor: pointer;
+	}
+}

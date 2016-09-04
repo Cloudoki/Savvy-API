@@ -1,0 +1,18 @@
+{
+	"basic" :
+	{
+		"id": "getId",
+		"name": "getName"
+	},
+	"full" :
+	{
+		"id": "getId",
+		"type": "getConst:type",
+		"name": "getName"
+	},
+	"set" : {
+        "protected": {
+		    "name" : "setName"
+	    }
+    }
+}

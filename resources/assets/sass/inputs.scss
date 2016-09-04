@@ -1,0 +1,156 @@
+/* Variables */
+$main-color: #465a65;
+$light-color: #90a4af;
+$dark-color: #273238;
+$light-grey: #ddd;
+$white: #fff;
+$grey: #bcbbc6;
+$green: #afc536;
+$dark-green: #99ac30;
+$mail-body: #f1f1f1;
+input {
+	border-radius: 2px !important;
+	box-shadow: none !important;
+	font-size: .9em !important;
+
+	&.inline-edit {
+		border: none;
+	    border-bottom: 1px solid #ccc;
+	    font-size: 1em !important;
+	    padding: 3px 0 0 0;
+	    height: auto;
+	    background-color: transparent;
+	}
+}	
+
+textarea {
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	width: 100%;
+	min-height: 60px;
+	resize: vertical;
+	font-size: .9em;
+	padding: 10px;
+	color: #666;
+}
+
+.input-group {	
+	&.iconed {
+		position: relative;
+
+		> [class^="icon-"],
+		> [class*=" icon-"] {
+			position: absolute;
+			right: 10px;
+			top: 6px;
+			font-size: 1.5em;
+			z-index: 10;
+			color: #ccc;
+		}
+
+		input {
+			padding-right: 40px;
+		}
+	}
+}
+
+.chosen-container-single {
+	> .chosen-single {
+		border-radius: 2px;
+		box-shadow: none;
+		background: #fff;
+		border: 1px solid #ccc;
+		padding: 6px 12px;
+    	position: relative;
+    	// bottom: 7px;
+    	height: 34px;
+    	font-size: .9em;
+    	line-height: 18px;
+    	color: #555;
+
+    	> div > b {
+    		background-position-y: 5px;
+    	}
+
+    	span {
+    		margin-right: 18px;
+    	}
+	}
+
+	> .chosen-default {
+		color: #aaa;
+	}
+
+	&.chosen-container-active {
+		> .chosen-single {
+			background: #fff;
+		}
+
+		> .chosen-drop {
+			margin-top: -7px;
+			border-radius: 2px;
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+			font-size: .9em;
+		}
+	}
+}
+
+.cp-datepicker {	
+
+	display: inline-block;
+	padding-left: 10px;
+
+	input {
+		max-width: 100px;
+		margin-left: 10px;
+		float: left !important;
+		color: #555;
+	}
+
+	span {
+		font-size: .9em;
+		color: #999;
+		line-height: 32px;
+		float: left;
+	}
+
+	i {
+		float: left;
+		color: #ccc;
+		font-size: 2em;
+		margin-left: 10px;
+	}
+}
+
+#ui-datepicker-div {
+	border-radius: 0;
+    border: none;
+    font-size: .9em;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    padding: 10px;
+
+    .ui-datepicker-header {
+    	background-color: #f8f8f8;
+    	border-radius: 0;
+    	border: 1px solid #eee;
+    	font-size: .9em;
+    	color: #999;
+    }
+
+    th {
+    	color: #999;
+    }
+
+    .ui-state-default {
+    	background-color: #f8f8f8;
+    	border-color: #eee;
+    	color: #777;
+    }
+
+    .ui-state-active {
+    	border-color: $green;
+    	color: $green;
+    }
+}

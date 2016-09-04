@@ -1,0 +1,42 @@
+.outer {
+	display: table;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+.middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+.cp-panel.cp-panel-oauth2{
+	width:500px;
+	display:block;
+	margin: auto;
+	border:none;
+} 
+.cp-panel .cp-panel-content .cp-info{
+	color: #999;
+	margin-bottom:30px;
+}
+.cp-panel .cp-panel-content .cp-input label{
+	font-size: .9em;
+}
+.cp-panel .cp-panel-content .cp-input select{
+	font-size: .9em;
+	padding: 5px;
+	color: #999;
+}
+.cp-panel .cp-panel-content .cp-link{
+	font-size: .9em;
+	color: #999;
+}
+.cp-panel .cp-panel-content .cp-link:hover{
+	color: #465a65;
+}
+.cp-btn {
+	color: #ccc;
+	background-color: #fff;
+}
+.cp-btn:hover {
+	background-color:#E6E6E6;
+}

@@ -1,0 +1,48 @@
+/* Variables */
+$main-color: #465a65;
+$light-color: #90a4af;
+$dark-color: #273238;
+$light-grey: #ddd;
+$white: #fff;
+$grey: #bcbbc6;
+$green: #afc536;
+$dark-green: #99ac30;
+$mail-body: #f1f1f1;
+.main-content {
+	.content-tabs {
+		position: relative;
+		z-index: 96;
+		
+		.nav-tabs {
+			background-color: #f8f8f8;
+			border-bottom: 1px solid #d4d3da;
+
+			> li {
+				> a {
+					border: none;
+					border-radius: 0;
+					margin: 0;
+					padding: 20px 30px;
+					text-decoration: none;
+					color: #999;
+				}
+
+				&.active {
+					> a {
+						font-weight: bold;
+						color: $main-color;
+						border-bottom: 1px solid #d4d3da;
+						border-right: 1px solid #eee;
+						border-left: 1px solid #eee;
+					}
+				}
+			}
+		}
+	}
+
+	.menued {
+		.context-menu.tabbed-view {
+			margin-top: 61px;
+		}
+	}
+}

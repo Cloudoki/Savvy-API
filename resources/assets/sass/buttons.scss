@@ -1,0 +1,56 @@
+/* Variables */
+$main-color: #465a65;
+$light-color: #90a4af;
+$dark-color: #273238;
+$light-grey: #ddd;
+$white: #fff;
+$grey: #bcbbc6;
+$green: #afc536;
+$dark-green: #99ac30;
+$mail-body: #f1f1f1;
+.cp-btn {
+	padding: 6px 12px;
+	border-radius: 2px;
+	border: 2px solid #ccc;
+	color: #ccc;
+	display: inline-block;
+	font-size: .9em;
+
+	&.simple {
+		border: none;
+		text-decoration: underline;
+		&:hover {
+			border: none;
+		}
+	}
+
+	&.full {
+		width: 100%;
+	}
+
+	&:hover {
+		cursor: pointer;
+		color: #bbb;
+		border: 2px solid #bbb;
+	}
+
+	&.greened {
+		border-color: $green;
+		color: $green;
+
+		&.filled {
+			background-color: $green;
+			color: $white;
+
+			&:hover {
+				color: $white;
+				background-color: $dark-green;
+			}
+		}
+
+		&:hover {
+			border-color: $dark-green;
+			color: $dark-green;
+		}
+	}
+}
